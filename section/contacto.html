@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/estilos.css">
+    <title>spacontacto</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg- rgb(249, 213, 230)">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> <img src="../images/icons8-meditación-gurú-96.png"
+                        alt="buba meditando color"> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active text let" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link active text let" href="productos.html">Productos</a>
+                        <a class="nav-link active text let" href="servicios.html">Servicios</a>
+                        <a class="nav-link active text let" href="nosotros.html">Nosotros</a>
+                        <a class="nav-link active text let" href="contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="contacto bg-rgb(185, 143, 149)">
+                <h1 data-aos="flip-right" class="formulariocontacto">
+                    CONTACTO
+                </h1>
+                <div class="formulario" style="text-align: center;">
+                    <h3 class="formu">FORMULARIO</h3>
+                    <form action="info">
+                        <p>
+                            <label for="nombre">NOMBRE Y APELLIDO</label>
+                            <input type="text" name="nombre">
+                        </p>
+
+                        <p>
+                            <label>MAIL</label>
+                            <input type="mail" name="mail">
+                        </p>
+
+                        <p>
+                            <label>TELEFÓNO</label>
+                            <input type="tel" name="telefono">
+                        </p>
+
+                        <p>
+                            <label>DIRECCIÓN</label>
+                            <input type="text" name="direccion">
+                        </p>
+                        <p class="block">
+                            <label>MENSAJE</label>
+                            <textarea name="mensaje" rows="3"></textarea>
+                        </p>
+                        <p class="block">
+                            <button type="submit">
+                                ENVIAR
+                            </button>
+                        </p>
+                    </form>
+                </div>
+
+                <div class="atencion" style="text-align: center;">
+                    <div class="horario">
+                        <h4>HORARIO DE ATENCIÓN:
+                        </h4>
+
+                        <h5>DE LUNES A SÁBADOS DE 9:00 HS. A 20: 00 HS.
+                        </h5>
+                    </div>
+
+                    <div class="gps">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.128589715689!2d-57.9649557849677!3d-34.90322238038295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e7b2a3fa1c89%3A0xad7fd2542b18bbec!2sC.%206%20222%2C%20B1902CLJ%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1669219065390!5m2!1ses!2sar"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="pie">
+
+        <div class="redes">
+            <a href="https://www.facebook.com/" target="_blank"><img src="../images/iconfacebook.svg"
+                    alt="logo facebook color"></a>
+
+            <a href="https://www.instagram.com/" target="_blank"><img src="../images/iconinstagram.svg"
+                    alt="logo instagram color"></a>
+
+            <a href="https://twitter.com/" target="_blank"><img src="../images/icontwitter.svg"
+                    alt="logo twitter color"></a>
+        </div>
+
+        <div class="logos">
+            <ul>
+                <li>
+                    <img src="../images/icons8-teléfono-ios-16-glyph-32.png" alt="logo de telefono"> 221-5555555
+                </li>
+
+                <li>
+                    <img src="../images/icons8-geo-cerca-32.png" alt="logo de gps"> Calle 6 nro. 222 La Plata
+                </li>
+
+                <li>
+                    <img src="../images/icons8-gmail-32.png" alt="logo de sobre"> spabienestar@gmail.com
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
