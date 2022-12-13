@@ -1,0 +1,21 @@
+header {
+    padding: 10px;
+    background-color: $color;
+    word-spacing: 20px;
+    line-height: 10px;
+
+
+    .navbar {
+        background-color: $color;
+
+
+        .let {
+            @extend .letter;
+            font-weight: bolder;
+            font-size: x-large;
+            text-align: left;
+            word-spacing: 25px;
+            line-height: 40px;
+        }
+    }
+}

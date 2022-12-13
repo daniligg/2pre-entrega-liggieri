@@ -1,0 +1,54 @@
+.servicios {
+    background-image: url('../images/velas4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    h2 {
+        @extend .letter;
+        font-weight: small;
+        font-size: small;
+        text-align: center;
+        word-spacing: 5px;
+        line-height: 10px;
+        padding: 5px;
+        border: 5px solid black;
+        margin: 5px;
+
+
+        @media (min-width:576px) {
+            h2 {
+                font-weight: bolder;
+                font-size: xx-large;
+                text-align: center;
+                word-spacing: 20px;
+                line-height: 80px;
+                padding: 30px;
+                margin: 30px;
+            }
+        }
+
+        @media (min-width:768px) {
+            h2 {
+                font-weight: bolder;
+                font-size: xx-large;
+                text-align: center;
+                word-spacing: 25px;
+                line-height: 60px;
+                padding: 25px;
+                margin: 20px;
+            }
+        }
+            
+
+        @media (min-width:992px) {
+            h2 {
+                font-size: x-large;
+                word-spacing: 1opx;
+                padding: 5px;
+                margin: 20px;
+            }
+        }
+    }
+}
