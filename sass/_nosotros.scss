@@ -1,0 +1,23 @@
+.nosotros {
+    border: 5px solid rgb(203, 161, 161);
+    display: block;
+    margin: auto;
+    text-align: center;
+    height: 200px;
+    width: 250px;
+
+    @media (min-width:576px) {
+        height: 300px;
+        width: 350px;
+    }
+
+    @media (min-width:768px) {
+        height: 400px;
+        width: 450px;
+    }
+
+    @media (min-width:992px){
+        height: 500px;
+        width: 550px;
+    }
+}

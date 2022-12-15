@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
-.letter, section, h2,
+.letra, section, h2,
 h3,
-h4, h1, p, header .navbar .let {
+h4, h1, p, .servicios h2, header .navbar .let {
   font-family: "Lato", sans-serif;
   font-style: normal;
   letter-spacing: 4px;
@@ -40,6 +40,26 @@ header .navbar .let {
 }
 .bienestar .spa {
   border: 5px solid rgb(203, 161, 161);
+  height: 200px;
+  width: 250px;
+}
+@media (min-width: 576px) {
+  .bienestar .spa {
+    height: 300px;
+    width: 350px;
+  }
+}
+@media (min-width: 768px) {
+  .bienestar .spa {
+    height: 400px;
+    width: 450px;
+  }
+}
+@media (min-width: 992px) {
+  .bienestar .spa {
+    height: 450px;
+    width: 600px;
+  }
 }
 
 .servicios {
@@ -49,25 +69,45 @@ header .navbar .let {
   background-size: cover;
   background-attachment: fixed;
 }
-
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgb(249, 213, 230);
-  padding: 0;
-  margin-top: 1em;
+.servicios h2 {
+  font-weight: small;
+  font-size: small;
+  text-align: center;
+  word-spacing: 5px;
+  line-height: 10px;
+  padding: 5px;
+  border: 5px solid black;
+  margin: 5px;
 }
-
-.logos {
-  font-family: "Lato", sans-serif;
-  font-style: small;
-  font-weight: normal;
-  font-size: xx-small;
-  color: black;
-  letter-spacing: 2px;
-  word-spacing: 2px;
-  line-height: 5px;
+@media (min-width: 576px) {
+  .servicios h2 {
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: center;
+    word-spacing: 20px;
+    line-height: 80px;
+    padding: 30px;
+    margin: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .servicios h2 {
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: center;
+    word-spacing: 25px;
+    line-height: 60px;
+    padding: 25px;
+    margin: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .servicios h2 {
+    font-size: x-large;
+    word-spacing: 1opx;
+    padding: 5px;
+    margin: 20px;
+  }
 }
 
 .redes {
@@ -87,7 +127,6 @@ footer {
   gap: 5px;
   justify-items: center;
 }
-
 @media (min-width: 576px) {
   .pie {
     display: grid;
@@ -110,9 +149,45 @@ footer {
     gap: 15px;
     padding: 1.5em;
   }
+}
+@media (min-width: 992px) {
+  .pie {
+    display: grid;
+    margin-bottom: 2em;
+    grid-template-areas: "redes  logos";
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(249, 213, 230);
+  padding: 0;
+  margin-top: 1em;
+}
+@media (min-width: 768px) {
   footer {
     flex-direction: row;
   }
+}
+
+.logos {
+  font-family: "Lato", sans-serif;
+  font-style: small;
+  font-weight: normal;
+  font-size: xx-small;
+  color: black;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  line-height: 5px;
+}
+.logos ul li {
+  list-style-type: none;
+}
+@media (min-width: 768px) {
   .logos {
     font-style: normal;
     font-weight: bolder;
@@ -123,19 +198,36 @@ footer {
   }
 }
 @media (min-width: 992px) {
-  .pie {
-    display: grid;
-    margin-bottom: 2em;
-    grid-template-areas: "redes  logos";
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-  }
   .logos {
     line-height: 20px;
   }
 }
-ul li {
-  list-style-type: none;
+
+.nosotros {
+  border: 5px solid rgb(203, 161, 161);
+  display: block;
+  margin: auto;
+  text-align: center;
+  height: 200px;
+  width: 250px;
+}
+@media (min-width: 576px) {
+  .nosotros {
+    height: 300px;
+    width: 350px;
+  }
+}
+@media (min-width: 768px) {
+  .nosotros {
+    height: 400px;
+    width: 450px;
+  }
+}
+@media (min-width: 992px) {
+  .nosotros {
+    height: 500px;
+    width: 550px;
+  }
 }
 
 a {
@@ -150,9 +242,9 @@ p {
   text-align: center;
   word-spacing: 1opx;
   line-height: 25px;
-  margin: 40px;
-  padding: 40px;
   color: black;
+  padding: 40px;
+  margin: 40px;
 }
 
 h1 {
@@ -278,8 +370,8 @@ section {
 }
 
 iframe {
-  width: 40vh;
-  height: 30vh;
+  width: 200px;
+  height: 200px;
 }
 
 @media (min-width: 576px) {
@@ -304,8 +396,8 @@ iframe {
     margin: 10px;
   }
   iframe {
-    width: 80vh;
-    height: 70vh;
+    width: 350px;
+    height: 250px;
   }
 }
 @media (min-width: 768px) {
@@ -339,8 +431,8 @@ iframe {
     font-weight: 400;
   }
   iframe {
-    width: 90vh;
-    height: 80vh;
+    width: 450px;
+    height: 400px;
   }
 }
 @media (min-width: 992px) {
@@ -359,6 +451,10 @@ iframe {
   }
   .atencion {
     justify-items: center;
+  }
+  iframe {
+    width: 600px;
+    height: 500px;
   }
 }
 .card {

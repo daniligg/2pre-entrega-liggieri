@@ -6,7 +6,7 @@
     background-attachment: fixed;
 
     h2 {
-        @extend .letter;
+        @extend .letra;
         font-weight: small;
         font-size: small;
         text-align: center;
@@ -18,37 +18,31 @@
 
 
         @media (min-width:576px) {
-            h2 {
-                font-weight: bolder;
-                font-size: xx-large;
-                text-align: center;
-                word-spacing: 20px;
-                line-height: 80px;
-                padding: 30px;
-                margin: 30px;
-            }
+            font-weight: bolder;
+            font-size: xx-large;
+            text-align: center;
+            word-spacing: 20px;
+            line-height: 80px;
+            padding: 30px;
+            margin: 30px;
         }
 
         @media (min-width:768px) {
-            h2 {
-                font-weight: bolder;
-                font-size: xx-large;
-                text-align: center;
-                word-spacing: 25px;
-                line-height: 60px;
-                padding: 25px;
-                margin: 20px;
-            }
+            font-weight: bolder;
+            font-size: xx-large;
+            text-align: center;
+            word-spacing: 25px;
+            line-height: 60px;
+            padding: 25px;
+            margin: 20px;
         }
-            
+
 
         @media (min-width:992px) {
-            h2 {
-                font-size: x-large;
-                word-spacing: 1opx;
-                padding: 5px;
-                margin: 20px;
-            }
+            font-size: x-large;
+            word-spacing: 1opx;
+            padding: 5px;
+            margin: 20px;
         }
     }
 }
