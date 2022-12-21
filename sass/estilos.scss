@@ -14,6 +14,8 @@
 
 @import "nosotros";
 
+@import "mixin";
+
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
 
 
@@ -24,7 +26,8 @@ a {
 
 }
 
-p {
+
+p, .relleno, .block {
     @extend .letra;
     font-weight: bolder;
     font-size: large;
@@ -32,8 +35,7 @@ p {
     word-spacing: 1opx;
     line-height: 25px;
     color: black;
-    padding: 40px;
-    margin: 40px
+    @include sizes ( 40px, 40px);
 }
 
 h1 {
@@ -163,9 +165,8 @@ section {
     letter-spacing: 2px;
     word-spacing: 5px;
     line-height: 20px;
-    padding: 5px;
     border: 5px solid black;
-    margin: 10px;
+    @include sizes ( 5px, 10px);
 }
 
 iframe {

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
 .letra, section, h2,
 h3,
-h4, h1, p, .servicios h2, header .navbar .let {
+h4, h1, p, .relleno, .block, .servicios h2, header .navbar .let {
   font-family: "Lato", sans-serif;
   font-style: normal;
   letter-spacing: 4px;
@@ -236,7 +236,7 @@ a {
   padding: 20px;
 }
 
-p {
+p, .relleno, .block {
   font-weight: bolder;
   font-size: large;
   text-align: center;
@@ -364,8 +364,8 @@ section {
   letter-spacing: 2px;
   word-spacing: 5px;
   line-height: 20px;
-  padding: 5px;
   border: 5px solid black;
+  padding: 5px;
   margin: 10px;
 }
 
